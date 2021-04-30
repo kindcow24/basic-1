@@ -1,0 +1,34 @@
+#include <stdio.h>
+#define _CRT_NO_SECURE_WARNINGS
+int main(void)
+{
+
+	char str[256];
+	printf("이름이 뭐에요? ");
+	scanf_s("%s", str ,sizeof(str));
+	
+	int age;
+	printf("나이가 몇 살 이에요? ");
+	scanf_s("%d", &age);
+
+	float f;
+	printf("몸무게가 몇kg이에요? ");
+	scanf_s("%f", &f);
+	
+	char abc[257];
+	printf("무슨 잘못을 했어요?");
+	scanf_s("%s", abc, sizeof(abc));
+	
+
+	printf("\n\n------범죄자 정보-----\n\n");
+	printf("이름     :%s\n" , str);
+	printf("나이     :%d\n", age);
+	printf("몸무게   :%.2f kg\n", f);
+	printf("한 짓    :%s\n", abc);
+   
+    
+
+
+	return 0;
+
+}
